@@ -33,4 +33,6 @@ for span in span_list:
     with open(f"video/{contId}.mp4", mode="wb") as f:
         f.write(requests.get(srcUrl).content)
         print(f"{contId}.mp4 down!")
+    resp.close()
+first_resp.close()
 print("over!")
